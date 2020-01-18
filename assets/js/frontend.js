@@ -10,13 +10,14 @@ const addCard = restaurant => {
     // Agregamos clases a "card".
     card.classList.add("col-md-4");
 
-
-    // Agregamos el nombre del restaurant dentro del div accediendo a la propiedad "name" de "restaurant".
+    // 2.2
+    // Creamos template.
     card.innerHTML = 
     '<div class="card restaurant__card">' +
         '<div class="card-header"><h4 class="card-title">'+ restaurant.name +'</h4></div>' +
         '<div class="card-body">' +
             '<div class="col-12 col-reset restaurant__raiting"><ul class="raiting--list rating-'+ restaurant.rating +'"><li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li></ul></div>'+
+            '<a href="https://www.facebook.com/sharer/sharer.php?u='+ restaurant.contact.site +'" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn--share">Compartir <i class="fas fa-share-square"></i></a>'+
             '<article class="col-12 col-reset restaurant__info">'+
                 '<h5>Datos de contacto</h5>'+
                 '<p>Sitio web: <a href="'+ restaurant.contact.site +'">'+ restaurant.contact.site +'</a></p>'+

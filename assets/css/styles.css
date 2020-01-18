@@ -235,14 +235,21 @@ header {
   width: 100%;
   padding: 40px 0;
 }
+.restaurant-grid .row > * {
+  margin-bottom: 40px;
+}
 .restaurant__card {
   box-shadow: 0 10px 10px rgba(179, 187, 195, 0.31);
   border-color: #bec6db;
   height: 100%;
+  padding-bottom: 60px;
 }
 .restaurant__card .card-header {
   padding: 5px 15px;
   background: #f5f6f7;
+}
+.restaurant__card .btn--share {
+  margin-bottom: 10px;
 }
 .restaurant__info {
   width: 100%;
@@ -253,11 +260,15 @@ header {
 .restaurant__info p:last-child {
   margin-bottom: 0;
 }
-.restaurant__raiting {
-  margin-bottom: 10px;
+.restaurant__action {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
 }
 .restaurant__action .btn {
-  width: 47%;
+  width: 48%;
   margin-right: 3%;
 }
 .restaurant__action .btn:last-child {
@@ -306,7 +317,7 @@ header {
 ------------------------------------------------------------ */
 .fix {
   width: 100%;
-  height: 64px;
+  height: 150px;
 }
 /* ------------------------------------------------------------
     FOOTER
@@ -317,6 +328,26 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 1;
+  background: #7e8ba7;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer__logo {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer__logo img {
+  width: 40px;
+}
+.footer__logo span {
+  display: block;
+}
+.footer__copy {
+  color: #e8ebf1;
+  font-size: 12px;
+  margin: 0;
 }
 /* ------------------------------------------------------------
     FORMS
@@ -348,6 +379,10 @@ a:hover {
 }
 .btn.btn--type2:hover {
   background: #012d57;
+}
+.btn.btn--share {
+  padding: 0;
+  color: #003a70;
 }
 /* ------------------------------------------------------------
     ICONS
