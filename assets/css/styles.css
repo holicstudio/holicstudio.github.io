@@ -103,6 +103,10 @@ h6 {
   line-height: 25px;
   font-weight: 600;
 }
+/* col reset */
+.col-reset {
+  padding: 0;
+}
 /* Placeholder */
 /* firefox 19+ */
 /* ie */
@@ -231,6 +235,15 @@ header {
   width: 100%;
   padding: 40px 0;
 }
+.restaurant__card {
+  box-shadow: 0 10px 10px rgba(179, 187, 195, 0.31);
+  border-color: #bec6db;
+  height: 100%;
+}
+.restaurant__card .card-header {
+  padding: 5px 15px;
+  background: #f5f6f7;
+}
 .restaurant__info {
   width: 100%;
 }
@@ -240,9 +253,53 @@ header {
 .restaurant__info p:last-child {
   margin-bottom: 0;
 }
+.restaurant__raiting {
+  margin-bottom: 10px;
+}
+.restaurant__action .btn {
+  width: 47%;
+  margin-right: 3%;
+}
+.restaurant__action .btn:last-child {
+  margin-right: 0;
+}
+.restaurant__address strong {
+  color: #7e8ba7;
+}
 /* Card */
 .card-title {
   margin: 0;
+}
+/* raiting list */
+.raiting--list {
+  margin: 0;
+  padding: 0;
+  color: #9da6be;
+}
+.raiting--list.rating-1 li:first-child {
+  color: #38b590;
+}
+.raiting--list.rating-2 li:nth-child(1),
+.raiting--list.rating-2 li:nth-child(2) {
+  color: #38b590;
+}
+.raiting--list.rating-3 li:nth-child(1),
+.raiting--list.rating-3 li:nth-child(2),
+.raiting--list.rating-3 li:nth-child(3) {
+  color: #38b590;
+}
+.raiting--list.rating-4 li:nth-child(1),
+.raiting--list.rating-4 li:nth-child(2),
+.raiting--list.rating-4 li:nth-child(3),
+.raiting--list.rating-4 li:nth-child(4) {
+  color: #38b590;
+}
+.raiting--list.rating-5 li {
+  color: #38b590;
+}
+.raiting--list li {
+  display: inline-block;
+  margin-right: 5px;
 }
 /* ------------------------------------------------------------
     FIX
@@ -284,6 +341,13 @@ a:hover {
 }
 .btn.btn--type1:hover {
   background: #38b590;
+}
+.btn.btn--type2 {
+  background: #003a70;
+  color: #fff;
+}
+.btn.btn--type2:hover {
+  background: #012d57;
 }
 /* ------------------------------------------------------------
     ICONS

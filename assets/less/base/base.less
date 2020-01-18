@@ -114,7 +114,13 @@ header {
     padding: 40px 0;
 }
 .restaurant__card {
-
+    box-shadow: 0 10px 10px rgba(179, 187, 195, 0.31);
+    border-color: @c-Gray3;
+    height: 100%;
+    .card-header {
+        padding: 5px 15px;
+        background: @c-Gray5;
+    }
 }
 .restaurant__info {
     width: 100%;
@@ -125,9 +131,75 @@ header {
         }
     }
 }
+.restaurant__raiting {
+    margin-bottom: 10px;
+}
+.restaurant__action {
+    .btn {
+        width: 47%;
+        margin-right: 3%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.restaurant__address {
+    strong {
+        color: @c-Gray1;
+    }
+}
 /* Card */
 .card-title {
     margin: 0;
+}
+/* raiting list */
+.raiting--list {
+    margin: 0;
+    padding: 0;
+    color: @c-Gray2;
+    &.rating-1 {
+     li {
+         &:first-child {
+             color: @c-Green2;
+         }
+     }       
+    } 
+    &.rating-2 {
+        li {
+            &:nth-child(1),
+            &:nth-child(2) {
+                color: @c-Green2;
+            }
+        }       
+    } 
+    &.rating-3 {
+        li {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                color: @c-Green2;
+            }
+        }       
+    }
+    &.rating-4 {
+        li {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                color: @c-Green2;
+            }
+        }       
+    }
+    &.rating-5 {
+        li {
+            color: @c-Green2;
+        }       
+    } 
+    li {
+        display: inline-block;
+        margin-right: 5px;
+    }
 }
 
 
