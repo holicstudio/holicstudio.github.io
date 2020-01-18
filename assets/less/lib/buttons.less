@@ -1,3 +1,18 @@
 /* ------------------------------------------------------------
    BUTTONS
 ------------------------------------------------------------ */
+a {
+    color: @c-Green;
+}
+/* btn */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    &.btn--type1 {
+        background: @c-Green;
+        color: #fff;
+        &:hover {
+            background: @c-Green2;
+        }
+    }
+}

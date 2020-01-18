@@ -55,19 +55,22 @@ header {
         margin: 0;
         li {
             display: inline-block;
-            margin: 0 0 0 10px;
+            margin: 0 0 0 20px;
             a {
                 text-decoration: none;
-                padding-bottom: 10px;
             }
             a:not(.btn) {
                 color: #fff;
+                padding-bottom: 10px;
                 &:hover {
                     border-bottom: 2px solid @c-Green;
                 }
             }
         }
     }
+}
+.menu__btn {
+    font-weight: 600;
 }
 
 
@@ -77,11 +80,33 @@ header {
 /* Hero image */
 .hero-image {
     width: 100%;
-    height: 300px;
+   
     background: url(../images/hero-image/hero-image.jpg) bottom center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    &,
+    .container {
+        height: 250px;
+    }
+    .container {
+        z-index: 3;
+        position: relative;
+    }
+}
+.hero__title {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    font-size: 48px;
+    line-height: 52px;
+    padding-top: 30px;
+    .center;
+}
+/* color item */
+.color-item {
+    color: @c-Green;
 }
 
 /* ------------------------------------------------------------
