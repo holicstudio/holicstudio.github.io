@@ -105,6 +105,14 @@ h6 {
 /* firefox 19+ */
 /* ie */
 /* Selection */
+::selection {
+  background: #47d7ac;
+  color: #fff;
+}
+::-moz-selection {
+  background: #47d7ac;
+  color: #fff;
+}
 /* ------------------------------------------------------------
    BASE
 ------------------------------------------------------------ */
