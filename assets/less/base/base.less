@@ -120,6 +120,10 @@ header {
             margin-bottom: 40px;
         }
     }
+    .btn {
+        width: 240px;
+        margin: 0 auto;
+    }
 }
 .restaurant__card {
     box-shadow: 0 10px 10px rgba(179, 187, 195, 0.31);
@@ -215,7 +219,107 @@ header {
         margin-right: 5px;
     }
 }
+/* scroll top */
+.scroll-top  {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 100;
+    display: none;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background: @c-Orange;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        background: @c-Orange2;
+    }
+}
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: @c-Gray5;
+    z-index: 200;
+}
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    .center;
+    .sk-cube {
+        width: 33%;
+        height: 33%;
+        background-color: @c-Green;
+        float: left;
+        -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+        animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+    }
+    .sk-cube1 {
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s;
+    }
+    .sk-cube2 {
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+    }
+    .sk-cube3 {
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+    }
+    .sk-cube4 {
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s;
+    }
+    .sk-cube5 {
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s;
+    }
+    .sk-cube6 {
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+    }
+    .sk-cube7 {
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+    }
+    .sk-cube8 {
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s;
+    }
+    .sk-cube9 {
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s;
+    }
+}
 
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+                transform: scale3D(1, 1, 1);
+    } 35% {
+        -webkit-transform: scale3D(0, 0, 1);
+                transform: scale3D(0, 0, 1); 
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+} 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+} 
+}
 
 /* ------------------------------------------------------------
     FIX
