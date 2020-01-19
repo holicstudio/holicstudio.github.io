@@ -2,7 +2,24 @@
  SMALL DEVICES
 ------------------------------------------------------------ */
 @media (max-width: 600px) { // ------ MiniTablet
-
+    .hero-image {
+        &,
+        .container {
+            height: 180px;
+        }
+    }
+    .hero__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .restaurant-grid {
+        padding: 20px 0 30px 0;
+    }
+    .restaurant-grid .row > * {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }// ------ End MiniTablet
 
 @media (max-width: 550px) { // ------ Mobile Landscape
@@ -10,8 +27,5 @@
 }// ------ End Mobile Landscape
 
 @media (max-width: 480px) { // ------ Mobile Portrait
-    
-    
-
 
 }// ------ End Mobile Portrait

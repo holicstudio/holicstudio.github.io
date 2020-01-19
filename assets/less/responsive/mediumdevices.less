@@ -2,10 +2,82 @@
     MEDIUM DEVICES
 ------------------------------------------------------------ */
 @media (max-width: 992px) {// ------ Tablet Landscape small
+    header {
+        .row {
+            margin: 0;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    .menu {
+        background: rgba(0,0,0,.8);
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,.2);
+        margin-top: 10px;
+        padding: 0;
+    }
+    .navbar-toggler {
+        background: rgba(0,0,0,.6);
+        &[aria-expanded="true"] {
+            background: rgba(0,0,0,.8);
+        }
+    }
+    h1,
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
 
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    h4,
+    h5,
+    h6 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .hero__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .restaurant-grid {
+        .row {
+            > * {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+    .fix {
+        display: none;
+    }
+    footer {
+        position: relative;
+    }
 }// ------ End Tablet Landscape mall
 
 
 @media (max-width: 768px) { // ------ Tablet Portrait
-  
+    .hero-image {
+        &,
+        .container {
+            height: 200px;
+        }
+    }
+    .hero__title {
+        width: 100%;
+    }
+    .restaurant-grid {
+        .row {
+            > * {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
 }// ------ End Tablet Portrait
